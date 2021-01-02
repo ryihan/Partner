@@ -14,7 +14,7 @@ if(isset($_COOKIE['__U__T__'])){
     <link rel="stylesheet" type="text/css" href="../Dist/Dashboard/CSS/dashboard.min.css">
     <link rel="stylesheet" type="text/css" href="../Dist/Dashboard/CSS/custom.css">
 	<!--------Bootstarf-------->
-	<link rel="stylesheet" href="../Css/Bootstrap/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="../Css/Bootstrap/bootstrap.min.css"  crossorigin="anonymous">
 	<script type="text/javascript" src="../Js/minjquery.min.js"></script>
 <!---- Include All Js----->
 </head>
