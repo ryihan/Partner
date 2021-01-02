@@ -11,15 +11,17 @@ function Balance(){
       if (this.readyState == 4 && this.status == 200) {
         //Return error And Redirect Login page....
         if(this.responseText=="Authontication_Error"){
-            window.location.replace("https://partner.fictionbdonlineshop.com/Login/?Error=Account Balance Unauthorize Axcess.");
+            window.location.replace("//<?php echo$_->Host_Name("") ?>/Login/?Error=Account Balance Unauthorize Axcess.");
         }else{
             
              document.getElementById("Balance").innerHTML = financial(this.responseText);
         }
 	}
     };
-    
-    xmlhttp.open("GET", "https://partner.fictionbdonlineshop.com/Dist/Balance/index.php", true);
+    <?php
+
+    ?>
+    xmlhttp.open("GET", "//<?php echo$_->Host_Name("") ?>/Dist/Balance/index.php", true);
     xmlhttp.send();
 }
 var timer =  5000 ;
@@ -30,7 +32,7 @@ function Pending_Balance(){
       if (this.readyState == 4 && this.status == 200) {
         //Return error And Redirect Login page....
         if(this.responseText=="Authontication_Error"){
-            window.location.replace("https://partner.fictionbdonlineshop.com/Login/?Error=Account Balance Unauthorize Axcess.");
+            window.location.replace("//<?php echo$_->Host_Name("") ?>/Login/?Error=Account Balance Unauthorize Axcess.");
         }else{
             if(this.responseText==0){
                 document.getElementById("pending").setAttribute("style", "display:none");
@@ -42,7 +44,7 @@ function Pending_Balance(){
 	}
     };
     
-    xmlhttp.open("GET", "https://partner.fictionbdonlineshop.com/Dist/Panding_Balance/balance.php", true);
+    xmlhttp.open("GET", "//<?php echo$_->Host_Name("")?>/Dist/Panding_Balance/balance.php", true);
     xmlhttp.send();
 }
 </script>
