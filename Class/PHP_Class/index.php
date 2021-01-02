@@ -155,6 +155,15 @@ class _
 		$String = md5($String);$String = sha1($String);$String = md5($String);$String = sha1($String);
 		return $String;
 	}
+	function Host_Name($gET_hOST_nAME){
+			if($gET_hOST_nAME=="true"){
+				return $_SERVER['HTTP_HOST'];
+			}elseif($gET_hOST_nAME=="True"){
+				return $_SERVER['HTTP_HOST'];
+			}else{
+				return $_SERVER['HTTP_HOST'];
+			}
+	}
 
 }
 $_ = new _();
