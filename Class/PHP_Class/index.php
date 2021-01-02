@@ -161,7 +161,14 @@ class _
 			}elseif($gET_hOST_nAME=="True"){
 				return $_SERVER['HTTP_HOST'];
 			}else{
-				return $_SERVER['HTTP_HOST'];
+				if($_SERVER['HTTP_HOST']=="localhost"){
+						$host = $_SERVER['HTTP_HOST'];
+						return $host."/partner";
+				}else{
+					return $_SERVER['HTTP_HOST'];
+				}
+
+				
 			}
 	}
 
