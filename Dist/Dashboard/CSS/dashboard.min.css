@@ -1,0 +1,37 @@
+.SV_title{
+	text-align: center;
+}
+.SV_Left{
+	   float: left;
+	   width: 50%;
+	   height: 50%;
+	   text-align: center;
+	   margin-bottom: 15px;
+}
+
+.SV_Right{
+	    float: right;
+	   width: 50%;
+	   height: 50%;
+	   text-align: center;
+	   margin-bottom: 15px;
+
+}
+.SV_Left Span{
+	       color: white;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #a99999;
+    margin-top: 20px;
+    height: 5px;
+    width: 8px;
+}
+.SV_Right Span{
+	       color: white;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #a99999;
+    margin-top: 20px;
+    height: 5px;
+    width: 8px;
+}

@@ -1,0 +1,2 @@
+[15-Dec-2020 06:56:41 UTC] PHP Warning:  Use of undefined constant Confirm_Send - assumed 'Confirm_Send' (this will throw an Error in a future version of PHP) in /home/fictionbdonlines/partner.fictionbdonlineshop.com/Signup/Verification/index.php on line 18
+[15-Dec-2020 06:56:41 UTC] PHP Warning:  Use of undefined constant Confirm_Send - assumed 'Confirm_Send' (this will throw an Error in a future version of PHP) in /home/fictionbdonlines/partner.fictionbdonlineshop.com/Signup/Verification/index.php on line 20

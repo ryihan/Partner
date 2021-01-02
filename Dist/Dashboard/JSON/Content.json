@@ -1,0 +1,56 @@
+[
+	{ 
+		"Title":"Earning",
+		"T":"Today Earning",
+		"M":"This Month Earning",
+		"A":"All Time Earning",
+		"T_V":"'.$E_T.'",
+		"M_V":"'.$E_M.'",
+		"A_V":"'.$E_A.'"
+	},
+	{ 
+		"Title":"Sale",
+		"T":"Today Sale",
+		"M":"This Month  Sale",
+		"A":"All Time Sale",
+		"T_V":"'.$S_T.'",
+		"M_V":"'.$S_M.'",
+		"A_V":"'.$S_A.'"
+	},
+	{ 
+		"Title":"Link Speed",
+		"T":"Today Link Speed",
+		"M":"This Month Link Speed",
+		"A":"All Time Link Speed",
+		"T_V":"'.$L_T.'",
+		"M_V":"'.$L_M.'",
+		"A_V":"'.$L_A.'"
+	},
+	{ 
+		"Title":"Conversion Rate",
+		"T":"Today Rate",
+		"M":"This Month Rate",
+		"A":"All Time Rate",
+		"T_V":"'.$C_T.'",
+		"M_V":"'.$C_M.'",
+		"A_V":"'.$C_A.'"
+	},
+	{ 
+		"Title":"Future Ravinew Calcolation",
+		"T":"Today ",
+		"M":"This Month ",
+		"A":"All Time ",
+		"T_V":"'.$F_T.'",
+		"M_V":"'.$F_M.'",
+		"A_V":"'.$F_A.'"
+	},
+	{ 
+		"Title":"Reffral",
+		"T":"Today Reffral",
+		"M":"This Month Reffral",
+		"A":"All Time Reffral",
+		"T_V":"'.$R_T.'",
+		"M_V":"'.$R_M.'",
+		"A_V":"'.$R_A.'"
+	}
+] 
