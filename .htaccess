@@ -4,8 +4,8 @@
 <IfModule mime_module>
   AddHandler application/x-httpd-ea-php74 .php .php7 .phtml
 </IfModule>
-ErrorDocument 404 /Not_Found
-RewriteEngine on
-RewriteCond %{HTTP_HOST} !^www\.
-RewriteRule ^(.*)$  $1 [R=302,NC]
+#ErrorDocument 404 /Not_Found
+#RewriteEngine on
+#RewriteCond %{HTTP_HOST} !^www\.
+#RewriteRule ^(.*)$  $1 [R=302,NC]
 # php -- END cPanel-generated handler, do not edit
