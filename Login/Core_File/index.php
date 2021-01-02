@@ -2,7 +2,13 @@
 //Include Class
 require_once("../../Class/PHP_Class/index.php");
 //url Generate
-$Url = "Location: http://partner.fictionbdonlineshop.com/Login/?";
+  $Url_Host = $_SERVER[HTTP_HOST];
+  if($Url_Host=="localhost"){
+    $URL= $_SERVER[REQUEST_URI];
+  $Url = "Location: http://".$Url_Host."/partner/Login/?";
+  }else{
+    $Url = "Location: http://partner.fictionbdonlineshop.com/Login/?";
+  }
 //Recived Data 
 $Username = $_REQUEST['user_name'];
 $Password = $_REQUEST['password'];
