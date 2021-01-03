@@ -27,8 +27,6 @@ function Statices($agoDay,$Arr){
   return  $x;
 }
  Statices(1,$Array);
-
-
   $dataPoints = array(
     array("x" => (time()*1000) , "y" =>(Statices(0,$Array))),
     array("x" => ((time()*1000)-($Day*1)) , "y" => (Statices(1,$Array))),
@@ -67,7 +65,7 @@ function Statices($agoDay,$Arr){
 <script>
 
 //Get Static Information
-var Url = 'https://partner.fictionbdonlineshop.com/Dist/Statics/LinkSpeed/';
+var Url = '//<?php echo $_->Host_Name("")?>/Dist/Statics/LinkSpeed/';
 function View_1(){
     var Return = 0.00;
             var xmlhttp = new XMLHttpRequest();
