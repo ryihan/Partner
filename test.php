@@ -45,7 +45,7 @@ $img = get_headers("https://admin.fictionbdonlineshop.com/img/Public_Prodic_Img/
                                            echo "Big IMAGE"; 
                                         }
                                         
-*/
+
 
 
 
@@ -75,5 +75,5 @@ if(file_exists("https://admin.fictionbdonlineshop.com/img/Public_Prodic_Img/Fict
 
 
 
-
+*/
 ?>
