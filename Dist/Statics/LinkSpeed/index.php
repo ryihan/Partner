@@ -1,11 +1,7 @@
 <?php
   $Day = 86400*1000;
- function Graph($agoDay){
-   
-    //return $Query_Date;
-}
-$U_Name = $User['user_name'];
-$Query = "SELECT * FROM Analytics_Report WHERE `user`='$U_Name'";
+  $U_Name = $User['user_name'];
+  $Query = "SELECT * FROM Analytics_Report WHERE `user`='$U_Name'";
     $Json = $_->Get_Data_M($Query,1);
      $Array =json_decode($Json);
      $lengthX = count($Array);
@@ -17,8 +13,6 @@ function Statices($agoDay,$Arr){
     }else{
         $TT = (86400*($agoDay));
     }
-    
-            //require_once("Class/PHP_Class/index.php");
     $Query_Date =date("Y-m-d",time()-$TT);
     $length = count($Arr);
     $x=0;
@@ -26,20 +20,11 @@ function Statices($agoDay,$Arr){
         $Time =$Query_Date;
         $Server_Time = strtotime($Arr[$i]->time)-300;
         $Curent_Server = date("Y-m-d",$Server_Time);
-       
         if($Curent_Server==$Time){
-         
-          
-         $x++;
-        
+         $x++;  
       }
-       
-     
-    
-    }
-
-    
-    return  $x;
+   }
+  return  $x;
 }
  Statices(1,$Array);
 
