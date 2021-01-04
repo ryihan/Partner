@@ -1,7 +1,6 @@
 <?php 
 //Include Class
 require_once("../../../../Class/PHP_Class/index.php");
-$_ = new _();
 $user_name = $User['user_name'];
 //Today Sale Report 
 $Query = "SELECT * FROM `order_history` WHERE DATE(Order_Date) = CURDATE() AND `ref`='$user_name'";
