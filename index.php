@@ -57,8 +57,6 @@ require_once("Class/PHP_Class/index.php");
     })
 ).done(function(){
     console.log("javascript Full Loaded");
-   
-  
  });
   
 });
