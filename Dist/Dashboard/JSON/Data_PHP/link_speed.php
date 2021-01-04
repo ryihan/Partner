@@ -1,13 +1,15 @@
 <?php 
 //Include Class
 require_once("../../../../Class/PHP_Class/index.php");
-//********************************************************************************************************/*Start Work*/
-$Terget = $User['user_name'];
-$Query = "SELECT * FROM `Analytics_Report` WHERE `user` = '$Terget' AND `time` >= DATE_SUB(CURDATE(), INTERVAL 0 DAY)";
+$User_Name = $User['user_name'];
+//Today Link Speed Report 
+$Query = "SELECT * FROM `Analytics_Report` WHERE `user` = '$User_Name' AND DATE(time) = CURDATE()";
 $Today = $_->Data_Count($Query,1);
-$Query = "SELECT * FROM `Analytics_Report` WHERE `user` = '$Terget' AND `time` >= DATE_SUB(CURDATE(), INTERVAL 1 MONTH)";
+//This Month Link Speed Report 
+$Query = "SELECT * FROM `Analytics_Report` WHERE `user` = '$User_Name' AND MONTH(time) = MONTH(NOW()) AND YEAR(time) = YEAR(NOW())";
 $Month = $_->Data_Count($Query,1);
-$Query = "SELECT * FROM `Analytics_Report` WHERE `user` = '$Terget'";
+//Alltime Link Speed Report 
+$Query = "SELECT * FROM `Analytics_Report` WHERE `user` = '$User_Name'";
 $All = $_->Data_Count($Query,1);
 //FeedBack
 echo '
@@ -16,5 +18,4 @@ echo '
 		"m":"'.$Month.'",
 		"a":"'.$All.'"
 	} ';
-//294dc4180c17e7a131e5a09acbd7e4c839caaa8f
 ?>
