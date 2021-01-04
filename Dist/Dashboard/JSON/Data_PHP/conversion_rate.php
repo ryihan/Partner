@@ -11,7 +11,8 @@ $Today_Link_Speed_Report = $_->Data_Count($Query,1);
 //Today Sale Report
 $Query = "SELECT * FROM `order_history` WHERE DATE(Order_Date) = CURDATE() AND `ref`='$User_Name'";
 $Today_Sale_Report = $_->Data_Count($Query,2);
-$Today = number_format((100*$Today_Sale_Report ) /$Today_Link_Speed_Report,2);
+$REPO =(100*$Today_Sale_Report ) /$Today_Link_Speed_Report;
+$Today = number_format($REPO,2);
 /*
 *This Month Conversion Rate Generate
 */
@@ -21,7 +22,8 @@ $Month_Link_Speed_Report = $_->Data_Count($Query,1);
 //This Month Sale Report
 $Query = "SELECT * FROM `order_history` WHERE  `ref`='$User_Name' AND MONTH(Order_Date) = MONTH(NOW()) AND YEAR(Order_Date) = YEAR(NOW())";
 $Month_Sale_Report = $_->Data_Count($Query,2);
-$Month =number_format((100*$Month_Sale_Report) /$Month_Link_Speed_Report,2) ;
+$REPO = (100*$Month_Sale_Report) /$Month_Link_Speed_Report;
+$Month =number_format($REPO,2) ;
 /*
 *Alltime Conversion Rate Generate
 */
@@ -31,7 +33,8 @@ $All_Link_Speed_Report = $_->Data_Count($Query,1);
 //Alltime Sale Report
 $Query = "SELECT * FROM `order_history` WHERE `ref`='$User_Name'";
 $All_Sale_Report = $_->Data_Count($Query,2);
-$All =  number_format((100*$All_Sale_Report)/$All_Link_Speed_Report, 2);
+$REPO = (100*$All_Sale_Report)/$All_Link_Speed_Report;
+$All =  number_format($REPO, 2);
 
 //FeedBack
 echo '
