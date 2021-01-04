@@ -49,7 +49,7 @@ function _dashboard_min(){
                 });
             }   
             if (i==3) {
-                $.post( "/Dist/Dashboard/JSON/Data_PHP/conversion_rate.php","").done(function( conversion_rate ) {
+                $.post( "Dist/Dashboard/JSON/Data_PHP/conversion_rate.php","").done(function( conversion_rate ) {
                     var Decode = JSON.parse(conversion_rate);
                     //Get Data 
                     var Today = Decode.t;
