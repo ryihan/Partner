@@ -1,5 +1,5 @@
 <div class="container" style="background: #dbdcdc;padding: 3%;border-radius: 5px;">
-		<div class=""> Privicy Policy Coppyright By Fiction BD</div>
+		<div class=""> Privicy Policy Coppyright By FictionBD.com</div>
 </div>
 
 
