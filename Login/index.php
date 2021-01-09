@@ -20,13 +20,9 @@ if(isset($_COOKIE['__U__T__'])){
 </head>
 <body style="margin:1%;background-image: url('../Img/background-lite.jpg'); background-color: #cccccc;">
 	<div class="container" style=" margin-bottom: 22px;">
-		<div class="card">
-	  <div class="card-body">
-	    <img src="../img/partner_logo.png">
-	  </div>
-	</div>
-</div>
-	<div class="container" style=" padding: ;">
+		<div class="card" style="padding: 14px;">
+	   
+          <div class="container" style=" padding: ;">
   <form action= "Core_File/index.php" method="post">
   <div class="form-row">
     <div class="form-group col-md-6">
@@ -39,15 +35,15 @@ if(isset($_COOKIE['__U__T__'])){
     </div>
 </div>
   <button type="submit" class="btn btn-primary">Login</button>
-  <div style=" float: right;">
-  	
-  	<a href="../Signup"><button type="button" class="btn btn-primary">Creat New  A Partner Account</button></a>
+  <div style=" float: right;"> 
+    <a href="../Signup"><button type="button" class="btn btn-primary">Creat New  A Partner Account</button></a>
   </div>
 </form>
 </div>
-<div class="container" style=" margin-top: 8px;">
-
-<div class="card">
+	</div>
+</div>
+<div class="container" style=" margin-top: 8px; padding-bottom: 5px">
+<div class="card" style=" padding-bottom: 10px; padding-top: 10px;">
   <h5 class="card-header">Rulse</h5>
   <div class="card-body">
     <h5 class="card-title">Partner Guideline</h5>
@@ -63,17 +59,11 @@ if(isset($_COOKIE['__U__T__'])){
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
-
 </div>
-
 <div class="container" style=" margin-top: 8px;">
 	<span>Coppyright By Fiction BD</span>
 	<span>Reed <a href="?">Privicy</a> And <a href="?">Policy</a> </span>
-
-
 </div>
-
-
 <script type="text/javascript">
 	$(document).ready(function(){
 	  	$.when(
