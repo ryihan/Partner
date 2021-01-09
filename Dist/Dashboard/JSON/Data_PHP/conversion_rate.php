@@ -11,8 +11,12 @@ $Today_Link_Speed_Report = $_->Data_Count($Query,1);
 //Today Sale Report
 $Query = "SELECT * FROM `order_history` WHERE DATE(Order_Date) = CURDATE() AND `ref`='$User_Name'";
 $Today_Sale_Report = $_->Data_Count($Query,2);
-$REPO =(100*$Today_Sale_Report ) /$Today_Link_Speed_Report;
-$Today = number_format($REPO,2);
+$Today =0.00;
+if (!$Today==$Today_Sale_Report) {
+	$REPO =(100*$Today_Sale_Report ) /$Today_Link_Speed_Report;
+	$Today = number_format($REPO,2);
+}
+
 /*
 *This Month Conversion Rate Generate
 */
